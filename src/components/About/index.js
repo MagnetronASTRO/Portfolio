@@ -8,10 +8,14 @@ import {
   AboutContent,
 } from './AboutElements';
 import AboutImg from '../../images/about.jpg';
+import { SectionTitle } from '../Stack/Stackelements';
 
 const About = () => {
   return (
     <AboutContainer id="about">
+      <SectionTitle>
+        <h2>About</h2>
+      </SectionTitle>
       <AboutWrapper>
         <AboutPresentation src={AboutImg}></AboutPresentation>
         <AboutContent>

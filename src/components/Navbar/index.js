@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import PropTypes from "prop-types";
+import { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 import {
   Nav,
   NavbarContainer,
@@ -9,8 +9,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-} from "./NavbarElements";
-import { animateScroll as scroll } from "react-scroll";
+} from './NavbarElements';
+import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ toggle }) => {
   const [navbar, setNavbar] = useState(false);
@@ -23,14 +23,14 @@ const Navbar = ({ toggle }) => {
     }
   };
 
-  window.addEventListener("scroll", changeShadow);
+  window.addEventListener('scroll', changeShadow);
 
   const toggleHome = () => {
     scroll.scrollToTop();
   };
   return (
     <>
-      <Nav className={navbar ? "scrolled" : "nscrolled"}>
+      <Nav className={navbar ? 'scrolled' : 'nscrolled'}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
             DG
@@ -87,7 +87,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-250}
+                offset={-100}
               >
                 Contact
               </NavLinks>

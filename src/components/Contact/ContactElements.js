@@ -3,18 +3,31 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
   width: 100%;
-  max-width: 1500px;
   margin: 0 auto;
-  height: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 20px 20px rgb(255 255 255);
+  position: relative;
+  z-index: 2;
+  padding: 50px 0 50px 0;
+
+  @media screen and (max-width: 900px) {
+    transition: 0.4s all ease;
+    min-height: 700px;
+  }
 `;
 
 export const ContactWrapper = styled.div`
-  height: 700px;
+  height: 100%;
   width: 100%;
+  max-width: 1500px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  margin: 0 auto;
   padding: 0 40px 0 40px;
   box-shadow: 0 0 30px 30px rgb(255, 255, 255);
 
@@ -23,7 +36,7 @@ export const ContactWrapper = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     column-gap: 40px;
-    height: 600px;
+    height: 100%;
     padding: 20px 40px 20px 40px;
   }
 `;

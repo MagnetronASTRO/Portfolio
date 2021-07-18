@@ -13,6 +13,7 @@ import { RiWindowFill } from 'react-icons/ri';
 import grey from '@material-ui/core/colors/grey';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core';
+import { SectionTitle } from '../Stack/Stackelements.js';
 
 const MyTheme = createTheme({
   palette: {
@@ -25,6 +26,9 @@ const MyTheme = createTheme({
 const Projects = () => {
   return (
     <ProjectsContainer id="projects">
+      <SectionTitle>
+        <h2>Projects</h2>
+      </SectionTitle>
       <ProjectsDisplay>
         <ProjectItem>
           <ProjectPresentation src={project1} alt="projectPresentation1" />

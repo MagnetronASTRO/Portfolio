@@ -8,14 +8,15 @@ import {
 import { FaCodeBranch, FaLinkedin, FaDownload } from 'react-icons/fa';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core';
-import grey from '@material-ui/core/colors/grey';
 import { MdEmail } from 'react-icons/md';
 import CvPdf from '../../files/CV_Dominik_Grudnik.pdf';
+import { SectionTitle } from '../Stack/Stackelements';
 
 const Theme = createTheme({
   palette: {
     primary: {
-      main: grey[800],
+      main: '#ffc107',
+      dark: '#ffb300',
     },
   },
 });
@@ -28,6 +29,9 @@ const Contact = () => {
   // }
   return (
     <ContactContainer id="contact">
+      <SectionTitle>
+        <h2>Contact</h2>
+      </SectionTitle>
       <ContactWrapper>
         <ThemeProvider theme={Theme}>
           <ContactItem>

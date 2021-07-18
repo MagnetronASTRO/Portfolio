@@ -1,8 +1,9 @@
-import styled from "styled-components";
-import Button from "@material-ui/core/Button";
+import styled from 'styled-components';
+import Button from '@material-ui/core/Button';
 
 export const ProjectsContainer = styled.div`
   width: 100%;
+  min-height: 700px;
   height: auto;
   box-shadow: 0 0 20px 20px rgb(255, 255, 255);
   position: relative;

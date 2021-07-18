@@ -4,6 +4,7 @@ import {
   StackItem,
   FlexContainer,
   ItemDesc,
+  SectionTitle,
 } from './Stackelements';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from 'react-icons/fa';
 import { FcSmartphoneTablet } from 'react-icons/fc';
@@ -12,6 +13,9 @@ import { SiStyledComponents, SiMaterialUi } from 'react-icons/si';
 const Stack = () => {
   return (
     <StackContainer id="stack">
+      <SectionTitle>
+        <h2>Stack</h2>
+      </SectionTitle>
       <FlexContainer>
         <StackItem>
           <FaHtml5 style={{ color: '#FC490B' }} />

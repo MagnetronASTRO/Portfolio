@@ -10,8 +10,8 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 3;
   text-align: center;
-  bottom: 0;
 `;
 
 export const FooterContent = styled.p`
