@@ -30,7 +30,10 @@ const Navbar = ({ toggle }) => {
   };
   return (
     <>
-      <Nav className={navbar ? 'scrolled' : 'nscrolled'}>
+      <Nav
+        className={navbar ? 'scrolled' : 'nscrolled'}
+        style={{ WebkitTapHighlightColor: 'transparent' }}
+      >
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
             DG

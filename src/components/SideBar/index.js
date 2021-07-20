@@ -17,7 +17,11 @@ import { MdEmail } from 'react-icons/md';
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SidebarContainer
+      isOpen={isOpen}
+      onClick={toggle}
+      style={{ WebkitTapHighlightColor: 'transparent' }}
+    >
       <Icon onClick={toggle}>
         <CloseIcon style={{}} />
       </Icon>
