@@ -17,8 +17,39 @@ export const SidebarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
+export const SideBarContact = styled.div`
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const SBCItems = styled.a`
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: #ffc107;
+  }
+`;
+
+export const CVp = styled.p`
+  margin-top: -10px;
+  font-weight: bold;
+`;
+
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
+
+  &:hover {
+    color: #ffc107;
+  }
 `;
 
 export const Icon = styled.div`

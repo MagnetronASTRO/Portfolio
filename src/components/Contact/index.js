@@ -22,11 +22,6 @@ const Theme = createTheme({
 });
 
 const Contact = () => {
-  // function copiedOn() {
-  //   navigator.clipboard
-  //     .writeText('dom.grudnik@gmail.com')
-  //     .then(console.log(this));
-  // }
   return (
     <ContactContainer id="contact">
       <SectionTitle>
@@ -84,6 +79,9 @@ const Contact = () => {
                   .then(
                     (document.getElementById('emailbtn').style.backgroundColor =
                       '#29e332')
+                  )
+                  .then(
+                    (document.getElementById('emailbtn').textContent = `COPIED`)
                   )
               }
             >

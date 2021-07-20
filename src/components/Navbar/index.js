@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { CgMenuLeft } from 'react-icons/cg';
 import PropTypes from 'prop-types';
 import {
   Nav,
@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
             DG
           </NavLogo>
           <MobileIcon onClick={toggle}>
-            <FaBars />
+            <CgMenuLeft style={{ fontSize: '33px' }} />
           </MobileIcon>
           <NavMenu>
             <NavItem>
@@ -87,7 +87,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-100}
+                offset={-250}
               >
                 Contact
               </NavLinks>

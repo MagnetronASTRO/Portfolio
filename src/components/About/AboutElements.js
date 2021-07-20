@@ -19,12 +19,12 @@ export const AboutWrapper = styled.div`
   height: 100%;
   width: 100%;
   max-width: 1500px;
-  padding: 0 40px 0 40px;
+  padding: min(2vw, 40px);
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 300px auto;
+  grid-template-columns: 320px auto;
   grid-template-rows: 1fr;
-  gap: 0px 40px;
+  gap: 0 40px;
   background-color: transparent;
   align-items: center;
 
@@ -32,6 +32,7 @@ export const AboutWrapper = styled.div`
     transition: 0.8s all ease;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    gap: 40px 40px;
   }
 `;
 

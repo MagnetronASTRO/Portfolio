@@ -42,7 +42,7 @@ const Projects = () => {
               variant="contained"
               color="primary"
               style={{ margin: '5%' }}
-              href="https://magnetronastro.github.io/TaskTrackerMA/"
+              href="https://domgrudnik-tasktracker.netlify.app/"
             >
               Demo{' '}
               <RiWindowFill style={{ fontSize: ' 25px', marginLeft: '4px' }} />
@@ -51,7 +51,7 @@ const Projects = () => {
               variant="contained"
               color="primary"
               style={{ margin: '5%' }}
-              href="https://github.com/MagnetronASTRO/TaskTrackerMA"
+              href="https://github.com/MagnetronASTRO/TaskTracker"
             >
               Github{' '}
               <FaCodeBranch style={{ fontSize: ' 25px', marginLeft: '4px' }} />

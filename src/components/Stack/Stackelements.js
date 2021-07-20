@@ -35,10 +35,11 @@ export const FlexContainer = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 1500px;
+  min-height: 320px;
   height: 100%;
   margin: 0 auto;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 `;
 
 export const ItemDesc = styled.p`

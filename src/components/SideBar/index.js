@@ -7,7 +7,13 @@ import {
   SidebarWrapper,
   SidebarLink,
   SidebarMenu,
+  SideBarContact,
+  SBCItems,
+  CVp,
 } from './SidebarElements';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import CvPdf from '../../files/CV_Dominik_Grudnik.pdf';
+import { MdEmail } from 'react-icons/md';
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -72,6 +78,31 @@ const Sidebar = ({ isOpen, toggle }) => {
           >
             Contact
           </SidebarLink>
+          <SideBarContact>
+            <SBCItems href="https://github.com/MagnetronASTRO">
+              <FaGithub />
+            </SBCItems>
+            <SBCItems href="https://www.linkedin.com/in/dominik-grudnik-426759212/">
+              <FaLinkedin />
+            </SBCItems>
+            <SBCItems href={CvPdf} target="blank" download>
+              <CVp>CV</CVp>
+            </SBCItems>
+            <SBCItems
+              id="emailbtnside"
+              onClick={() =>
+                navigator.clipboard
+                  .writeText('dom.grudnik@gmail.com')
+                  .then(
+                    (document.getElementById('emailbtnside').style.color =
+                      '#29e332')
+                  )
+                  .then(alert('Email copied to clipboard.'))
+              }
+            >
+              <MdEmail />
+            </SBCItems>
+          </SideBarContact>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
