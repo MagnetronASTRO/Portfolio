@@ -21,11 +21,10 @@ const About = () => {
         <AboutContent>
           <AboutHeading>About Me</AboutHeading>
           <AboutPara>
-            My name is Dominik Grudnik, I&apos;m 20 years old and I live in
-            vilage near Krakow called Korzkiew. I gradueted this year from IT
-            technical high school and I&apos;m enrolled to PK university for
-            extramural studies. I&apos;m active person who likes variety of
-            sport activities and I follow latest IT innovations.
+            My name is Dominik Grudnik, I&apos;m 20 years old and I live near
+            Krakow. This year I graduated from the IT technical school and I am
+            enrolled in extramural studies at PK. I am an active person who
+            likes various sports activities and follows the latest IT news.
           </AboutPara>
         </AboutContent>
       </AboutWrapper>
