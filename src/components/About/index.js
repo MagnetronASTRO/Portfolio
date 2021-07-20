@@ -25,7 +25,7 @@ const About = () => {
             vilage near Krakow called Korzkiew. I gradueted this year from IT
             technical high school and I&apos;m enrolled to PK university for
             extramural studies. I&apos;m active person who likes variety of
-            sport activities and I follows latest IT innovations.
+            sport activities and I follow latest IT innovations.
           </AboutPara>
         </AboutContent>
       </AboutWrapper>
