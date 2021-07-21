@@ -15,7 +15,11 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import CvPdf from '../../files/CV_Dominik_Grudnik.pdf';
 import { MdEmail } from 'react-icons/md';
 
+import { useTranslation } from 'react-i18next';
+
 const Sidebar = ({ isOpen, toggle }) => {
+  const { t } = useTranslation();
+
   return (
     <SidebarContainer
       isOpen={isOpen}
@@ -36,7 +40,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            Home
+            {t('nav_home')}
           </SidebarLink>
           <SidebarLink
             to="stack"
@@ -47,7 +51,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            Stack
+            {t('nav_stack')}
           </SidebarLink>
           <SidebarLink
             to="projects"
@@ -58,7 +62,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            Projects
+            {t('nav_projects')}
           </SidebarLink>
           <SidebarLink
             to="about"
@@ -69,7 +73,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            About
+            {t('nav_about')}
           </SidebarLink>
           <SidebarLink
             to="contact"
@@ -80,7 +84,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            Contact
+            {t('nav_contact')}
           </SidebarLink>
           <SideBarContact>
             <SBCItems href="https://github.com/MagnetronASTRO">

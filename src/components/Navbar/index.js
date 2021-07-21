@@ -12,6 +12,10 @@ import {
 } from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
 
+import cookies from 'js-cookie';
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+
 const Navbar = ({ toggle }) => {
   const [navbar, setNavbar] = useState(false);
 
@@ -28,6 +32,18 @@ const Navbar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
+  const currentLanguageCode = cookies.get('i18next') || 'pl';
+  const { t } = useTranslation();
+
+  const handleToggleLanguage = () => {
+    if (currentLanguageCode == 'pl') {
+      i18next.changeLanguage('en');
+    } else {
+      i18next.changeLanguage('pl');
+    }
+  };
+
   return (
     <>
       <Nav
@@ -38,13 +54,24 @@ const Navbar = ({ toggle }) => {
           <NavLogo to="/" onClick={toggleHome}>
             DG
           </NavLogo>
+          <div className="btnwrapper">
+            <div
+              className="button r center"
+              id="button-1"
+              onClick={handleToggleLanguage}
+            >
+              <input type="checkbox" className="checkbox" />
+              <div className="knobs"></div>
+              <div className="layer"></div>
+            </div>
+          </div>
           <MobileIcon onClick={toggle}>
             <CgMenuLeft style={{ fontSize: '33px' }} />
           </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks to="home" onClick={toggleHome}>
-                Home
+                {t('nav_home')}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -56,7 +83,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Stack
+                {t('nav_stack')}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -68,7 +95,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Projects
+                {t('nav_projects')}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -80,7 +107,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                About
+                {t('nav_about')}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -92,7 +119,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-250}
               >
-                Contact
+                {t('nav_contact')}
               </NavLinks>
             </NavItem>
           </NavMenu>

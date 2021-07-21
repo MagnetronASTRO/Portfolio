@@ -1,0 +1,20 @@
+{
+  "nav_home": "Start",
+  "nav_stack": "Technolgie",
+  "nav_projects": "Projekty",
+  "nav_about": "O mnie",
+  "nav_contact": "Kontakt",
+  "start_top": "Witam jestem Dominik",
+  "start_btn": "MOJE PRACE",
+  "stack_section": "Technologie",
+  "projects_section": "Projekty",
+  "project_1_name": "Aplikacja ToDo",
+  "p_1_description": "Aplikacja do śledzenia zadań wykonana z wykorzystaniem material-UI i styled-components w react.js",
+  "p_1_btn_demo": "DEMO",
+  "p_1_btn_code": "KOD",
+  "about_section": "O mnie",
+  "about": "O mnie",
+  "about_para": "Nazywam się Dominik Grudnik, mam 20 lat i mieszkam pod Krakowem. W tym roku ukończyłem technikum informatyczne i jestem zapisany na studia zaoczne na PK. Jestem osobą aktywną, lubiącą różne aktywności sportowe i śledzącą najnowsze technologie IT.",
+  "contact": "Kontakt",
+  "footer": " Wszelkie prawa zastrzeżone"
+}

@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Link as LinkS } from "react-scroll";
-import myBg from "../../images/trumpetBG.jpg";
+import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
+import myBg from '../../images/trumpetBG.jpg';
 
 export const StartContainer = styled.div`
   height: 900px;
@@ -8,6 +8,10 @@ export const StartContainer = styled.div`
   width: 100%;
   box-shadow: inset 0 -30px 20px -20px rgb(255 255 255);
   background: #fff url(${myBg}) center center/cover no-repeat;
+
+  @media screen and (max-width: 900px) {
+    height: 800px;
+  }
 `;
 
 export const HeroContainer = styled.div`

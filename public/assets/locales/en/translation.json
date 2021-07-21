@@ -1,0 +1,20 @@
+{
+  "nav_home": "Home",
+  "nav_stack": "Stack",
+  "nav_projects": "Projects",
+  "nav_about": "About",
+  "nav_contact": "Contact",
+  "start_top": "Hello, I'm Dominik",
+  "start_btn": "MY PROJECTS",
+  "stack_section": "Stack",
+  "projects_section": "Projects",
+  "project_1_name": "Task Tracker",
+  "p_1_description": "A todo application made using react.js material UI and styled-components.",
+  "p_1_btn_demo": "DEMO",
+  "p_1_btn_code": "CODE",
+  "about_section": "About",
+  "about": "About Me",
+  "about_para": "My name is Dominik Grudnik, I'm 20 years old and I live near Krakow. This year I graduated from the IT technical school and I am enrolled in extramural studies at PK. I am an active person who likes various sports activities and follows the latest IT news.",
+  "contact": "Contact",
+  "footer": " All rights reserved"
+}

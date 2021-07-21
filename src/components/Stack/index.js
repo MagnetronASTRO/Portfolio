@@ -10,11 +10,15 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from 'react-icons/fa';
 import { FcSmartphoneTablet } from 'react-icons/fc';
 import { SiStyledComponents, SiMaterialUi } from 'react-icons/si';
 
+import { useTranslation } from 'react-i18next';
+
 const Stack = () => {
+  const { t } = useTranslation();
+
   return (
     <StackContainer id="stack">
       <SectionTitle>
-        <h2>Stack</h2>
+        <h2>{t('stack_section')}</h2>
       </SectionTitle>
       <FlexContainer>
         <StackItem>

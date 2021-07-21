@@ -10,12 +10,16 @@ import {
 } from './StartElements';
 import WorkIcon from '@material-ui/icons/Work';
 
+import { useTranslation } from 'react-i18next';
+
 const Start = () => {
+  const { t } = useTranslation();
+
   return (
     <StartContainer id="home">
       <HeroContainer>
         <HeroContent>
-          <TopT>Hello, I&apos;m Dominik</TopT>
+          <TopT>{t('start_top')}</TopT>
           <BottomT>Frontend developer</BottomT>
           <br></br>
           <HomeBtnWrapper
@@ -27,7 +31,7 @@ const Start = () => {
             offset={-80}
           >
             <HomeBtn>
-              My projects <WorkIcon />
+              {t('start_btn')} <WorkIcon />
             </HomeBtn>
           </HomeBtnWrapper>
         </HeroContent>

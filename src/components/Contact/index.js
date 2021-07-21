@@ -12,6 +12,8 @@ import { MdEmail } from 'react-icons/md';
 import CvPdf from '../../files/CV_Dominik_Grudnik.pdf';
 import { SectionTitle } from '../Stack/Stackelements';
 
+import { useTranslation } from 'react-i18next';
+
 const Theme = createTheme({
   palette: {
     primary: {
@@ -22,10 +24,12 @@ const Theme = createTheme({
 });
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <ContactContainer id="contact">
       <SectionTitle>
-        <h2>Contact</h2>
+        <h2>{t('contact')}</h2>
       </SectionTitle>
       <ContactWrapper>
         <ThemeProvider theme={Theme}>
