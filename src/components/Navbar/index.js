@@ -37,7 +37,7 @@ const Navbar = ({ toggle }) => {
   const { t } = useTranslation();
 
   const handleToggleLanguage = () => {
-    if (currentLanguageCode == 'pl') {
+    if (currentLanguageCode === 'pl') {
       i18next.changeLanguage('en');
     } else {
       i18next.changeLanguage('pl');
