@@ -12,12 +12,15 @@ import {
   CVp,
 } from './SidebarElements';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import CvPdf from '../../files/CV_Dominik_Grudnik.pdf';
+import CVpl from '../../files/Dominik_Grudnik_CV_pl.pdf';
+import CVen from '../../files/Dominik_Grudnik_CV_en.pdf';
 import { MdEmail } from 'react-icons/md';
 
 import { useTranslation } from 'react-i18next';
+import cookies from 'js-cookie';
 
 const Sidebar = ({ isOpen, toggle }) => {
+  const currentLanguageCode = cookies.get('i18next') || 'pl';
   const { t } = useTranslation();
 
   return (
@@ -93,7 +96,11 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SBCItems href="https://www.linkedin.com/in/dominik-grudnik-426759212/">
               <FaLinkedin />
             </SBCItems>
-            <SBCItems href={CvPdf} target="blank" download>
+            <SBCItems
+              href={currentLanguageCode === 'pl' ? CVpl : CVen}
+              target="blank"
+              download
+            >
               <CVp>CV</CVp>
             </SBCItems>
             <SBCItems

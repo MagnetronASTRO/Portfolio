@@ -9,10 +9,12 @@ import { FaCodeBranch, FaLinkedin, FaDownload } from 'react-icons/fa';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core';
 import { MdEmail } from 'react-icons/md';
-import CvPdf from '../../files/CV_Dominik_Grudnik.pdf';
+import CVpl from '../../files/Dominik_Grudnik_CV_pl.pdf';
+import CVen from '../../files/Dominik_Grudnik_CV_en.pdf';
 import { SectionTitle } from '../Stack/Stackelements';
 
 import { useTranslation } from 'react-i18next';
+import cookies from 'js-cookie';
 
 const Theme = createTheme({
   palette: {
@@ -24,6 +26,7 @@ const Theme = createTheme({
 });
 
 const Contact = () => {
+  const currentLanguageCode = cookies.get('i18next') || 'pl';
   const { t } = useTranslation();
 
   return (
@@ -63,7 +66,7 @@ const Contact = () => {
               variant="contained"
               color="primary"
               style={{ fontSize: '23px' }}
-              href={CvPdf}
+              href={currentLanguageCode === 'pl' ? CVpl : CVen}
               target="blank"
               download
             >

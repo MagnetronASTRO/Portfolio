@@ -60,7 +60,11 @@ const Navbar = ({ toggle }) => {
               id="button-1"
               onClick={handleToggleLanguage}
             >
-              <input type="checkbox" className="checkbox" />
+              <input
+                type="checkbox"
+                className="checkbox"
+                defaultChecked={currentLanguageCode === 'pl' ? '' : 'checked'}
+              />
               <div className="knobs"></div>
               <div className="layer"></div>
             </div>
