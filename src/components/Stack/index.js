@@ -6,7 +6,14 @@ import {
   ItemDesc,
   SectionTitle,
 } from './Stackelements';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from 'react-icons/fa';
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGitAlt,
+  FaSass,
+} from 'react-icons/fa';
 import { FcSmartphoneTablet } from 'react-icons/fc';
 import { SiStyledComponents, SiMaterialUi } from 'react-icons/si';
 
@@ -52,6 +59,10 @@ const Stack = () => {
         <StackItem>
           <SiStyledComponents style={{ color: '#D671AF' }} />
           <ItemDesc>StylComp</ItemDesc>
+        </StackItem>
+        <StackItem>
+          <FaSass style={{ color: '#D671AF' }} />
+          <ItemDesc>SASS</ItemDesc>
         </StackItem>
       </FlexContainer>
     </StackContainer>

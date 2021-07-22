@@ -25,6 +25,8 @@ const About = () => {
         <AboutContent>
           <AboutHeading>{t('about')}</AboutHeading>
           <AboutPara>{t('about_para')}</AboutPara>
+          <AboutHeading>{t('work')}</AboutHeading>
+          <AboutPara>{t('about_work')}</AboutPara>
         </AboutContent>
       </AboutWrapper>
     </AboutContainer>

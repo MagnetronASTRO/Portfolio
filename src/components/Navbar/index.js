@@ -47,7 +47,7 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav
-        className={navbar ? 'scrolled' : 'nscrolled'}
+        className={navbar ? 'scrolled' : ''}
         style={{ WebkitTapHighlightColor: 'transparent' }}
       >
         <NavbarContainer>

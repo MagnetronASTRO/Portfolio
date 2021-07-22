@@ -58,5 +58,11 @@ export const ItemBtn = styled(Button)`
   @media screen and (max-width: 900px) {
     width: 100%;
     max-width: none;
+
+    span {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 `;

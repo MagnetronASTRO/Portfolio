@@ -17,4 +17,8 @@ export const FooterContainer = styled.footer`
 export const FooterContent = styled.p`
   font-size: 18px;
   color: white;
+
+  @media screen and (max-width: 350px) {
+    font-size: 6vw;
+  }
 `;

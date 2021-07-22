@@ -7,10 +7,10 @@
   margin: 0;
   padding: 0;
 }
-.nscrolled {
+/* .nscrolled {
   transition: 0.3s;
   box-shadow: 0 0 10px 10px rgb(255 255 255);
-}
+} */
 
 .scrolled {
   transition: 0.3s;

@@ -49,14 +49,30 @@ export const ProjectItem = styled.div`
 
 export const ProjectPresentation = styled.img`
   width: 100%;
+
+  @media screen and (max-width: 330px) {
+    transition: 0.8s all ease;
+    width: 95%;
+  }
 `;
 
 export const ProjectDescripion = styled.p`
   padding: 3% 0 3% 0;
   font-weight: 500;
+  font-size: 16px;
+
+  @media screen and (max-width: 330px) {
+    transition: 0.8s all ease;
+    font-size: 6vw;
+  }
 `;
 
 export const ProjectName = styled.h3`
   padding: 3% 0 3% 0;
-  font-size: 150%;
+  font-size: 25px;
+
+  @media screen and (max-width: 330px) {
+    transition: 0.8s all ease;
+    font-size: 8vw;
+  }
 `;

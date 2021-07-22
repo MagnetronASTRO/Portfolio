@@ -6,7 +6,7 @@ export const StartContainer = styled.div`
   height: 900px;
   position: relative;
   width: 100%;
-  box-shadow: inset 0 -30px 20px -20px rgb(255 255 255);
+  box-shadow: inset 0 -30px 10px -7px #fff8e1;
   background: #fff url(${myBg}) center center/cover no-repeat;
 
   @media screen and (max-width: 900px) {
