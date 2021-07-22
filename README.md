@@ -1,3 +1,15 @@
+# Website functionality
+
+  Language toggle option in navbar
+    CV download source(different language) changes with website language
+    
+  Website RWD for galaxy z fold
+  
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
