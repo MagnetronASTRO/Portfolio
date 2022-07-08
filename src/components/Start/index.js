@@ -20,7 +20,7 @@ const Start = () => {
       <HeroContainer>
         <HeroContent>
           <TopT>{t('start_top')}</TopT>
-          <BottomT>Frontend developer</BottomT>
+          <BottomT>Full-stack developer</BottomT>
           <br></br>
           <HomeBtnWrapper
             to="projects"
