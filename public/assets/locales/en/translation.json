@@ -13,10 +13,10 @@
   "p_1_btn_demo": "DEMO",
   "p_1_btn_code": "CODE",
   "about_section": "About",
-  "about": "About Me",
-  "about_para": "My name is Dominik Grudnik, I'm 20 years old and I live near Krakow. I graduated from the IT technical college and I am enrolled in extramural studies at PK. I am an active person who likes various sports activities and follows the latest IT news. One of my more developed hobbies is playing in a brass band.",
+  "about": "About Me", 
+  "about_para": "My name is Dominik Grudnik, I'm 21 years old and I live near Krakow. I'm studying Computer Science at Politechnika Krakowska in an extramatural mode at the Faculty of WIiT. I am an active person who likes various sports activities and follows the latest IT news.",
   "work": "Work",
-  "about_work": "I devote my time to development towards the Front-end and other IT technologies, creating smaller and larger projects. I'm looking for a job/internship as a Front-end developer or a similar position. I'm open to all propositions.",
+  "about_work": "Currently, I work as a Full-stack developer, and in my spare time I create all kinds of applications that help me in my daily life and study. I'm open to advancement.",
   "contact": "Contact",
   "footer": " All rights reserved"
 }
